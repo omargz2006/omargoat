@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15-Question Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Qestions à choix multiples (QSM)</h1>
+        <div class="meta" style="font-size: 35px">preparer ton reponses</div>
+        <div class="small" style="font-size: 35px">
+          High score: <span id="highscore">0</span>
+        </div>
+      </header>
+
+      <section class="card">
+        <div class="progress"><i id="prog"></i></div>
+
+        <div id="quiz-area">
+          <div id="qnum" class="small">
+            Question <span id="current">1</span> / 15
+          </div>
+          <div id="question" class="question"></div>
+          <div id="choices" class="choices"></div>
+
+          <div class="controls">
+            <button id="prev">◀ Avant</button>
+            <button id="next">Apres ▶</button>
+            <button id="submit">soumettre</button>
+          </div>
+        </div>
+
+        <div id="result" class="result" style="display: none"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
